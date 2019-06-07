@@ -5,9 +5,17 @@
     padding: 2.4rem;
     background: @wild-sand;
 
+    @media @phone {
+        padding: 1.6rem;
+    }
+
     .nav-content {
         width: 50%;
         .displayFlex(column);
+
+        @media @phone {
+            width: 100%;
+        }
 
         .nav-logo {
             font-size: 4rem;
