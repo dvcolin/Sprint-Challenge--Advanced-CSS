@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website uses hard-coded values (pixels) for mobile, tablet, and desktop versions of a website. The website may look good at specific device widths, but will not look good at ALL device widths. A responsive website uses responsive units, such as % and rem, which allows the website to adjust to all device widths. This creates a much better experience for users on all screen sizes, not just specific ones.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing a website with the mobile view first and then adding media queries that change styles as the web page gets bigger. Mobile first uses (min-width) media queries, and are placed in order from smaller screens to larger screens. Desktop first means designing a website with the desktop view first and then adding media queries that change styles as the web page gets smaller. Desktop first uses (max-width) media queries, and are placed in order from larger screens to smaller screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Because Google Chrome has a default font size of 16px, setting the font size to 62.5% makes the default size 10px. We can then use rem units (1rem = 10px) to size our text and accommodate people who may be visually impaired, as our font sizes will change based on their font settings in the browser. It is easier to size our text with a base of 10px, rather than 16px.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing provides improved organization and functionality in our CSS. It allows us to write less code by storing many styles in one place that we can then reuse or change easily. It improves organization by dividing our code into multiple files, therefore making it much easier to find a component or selector that we're looking for.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting because it makes it way easier to organize one's code. In addition, being able to divide one's code in multiple less files makes it much easier to find the class we're looking for, without scrolling through hundreds of lines of code. The concept that gives me the most trouble is finding good uses for parametric mixins, but I will likely learn good uses for them as I continue improving at LESS.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
