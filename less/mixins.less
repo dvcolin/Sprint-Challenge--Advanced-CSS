@@ -1,1 +1,33 @@
 // Mixins Here
+.displayFlex(@d: row, @j: center, @a: center) {
+    display: flex;
+    flex-direction: @d;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.bgImage(@size: cover, @position: center) {
+    background-size: @size;
+    background-position: @position;
+}
+
+.signUpButton(@bg, @color, @pv, @ph) {
+    background: @bg;
+    padding: @pv @ph;
+    color: @color;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
+    .hoverTransition();
+
+    &:hover {
+        background: @color;
+        color: @bg;
+        cursor: pointer;
+    }
+}
+
+.hoverTransition {
+    transition: background 200ms ease-out, color 200ms ease-out;
+}

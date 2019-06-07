@@ -1,1 +1,33 @@
 // Navigation code here
+.navbar {
+    width: 100%;
+    .displayFlex();
+    padding: 2.4rem;
+    background: @wild-sand;
+
+    .nav-content {
+        width: 50%;
+        .displayFlex(column);
+
+        .nav-logo {
+            font-size: 4rem;
+        }
+
+        .nav-links {
+            .displayFlex();
+            margin-top: 2rem;
+            font-size: 1.6rem;
+
+            .nav-link {
+                text-decoration: none;
+                color: @ebony-clay;
+                margin: 0 1.6rem;
+                transition: @linkHover;
+
+                &:hover {
+                    color: blue;
+                }
+            }
+        }
+    }
+}
